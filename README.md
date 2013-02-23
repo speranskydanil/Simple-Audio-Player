@@ -14,3 +14,5 @@ Simple-Audio-Player is a lightweight JavaScript library which is implemented as 
 
 1. It is necessary to have a web server, you cannot open it statically
 2. Change path to swf directory in player.js if it is necessary
+
+![screen](https://raw.github.com/speranskydanil/Simple-Audio-Player/master/screen.png)
