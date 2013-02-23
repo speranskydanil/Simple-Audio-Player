@@ -1,0 +1,74 @@
+<!doctype>
+
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../css/player.css" />
+
+    <style>
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+
+.wrapper {
+  width: 720px;
+  margin: 30px auto 0px;
+  padding: 30px;
+  border: 1px solid #aaa;
+  background: #f5f5f5;
+
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.wrapper h1 {
+  margin: 0px 16px;
+  padding: 0px;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.wrapper hr {
+  height: 1px;
+  margin: 16px 0px;
+  padding: 0px;
+  border: none;
+  background: #d5d5d5;
+}
+
+.wrapper .label {
+  margin-bottom: 4px;
+  padding-left: 16px;
+  font-style: italic;
+}
+    </style>
+
+    <script src="../js/soundmanager2.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/player.js"></script>
+
+    <script>
+      $(document).ready(function() {        
+        $('#player').player('Losing-My-Religion.mp3');
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1>Playlist</h1>
+
+      <hr>
+
+      <div class="label">R.E.M. - Losing My Religion</div>
+      <div id="player" class="player"></div>
+    </div>
+  </body>
+</html>
+
