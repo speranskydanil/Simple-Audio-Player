@@ -1,7 +1,6 @@
 (function ($, sm) {
   sm.setup({
-    url: '/swf/', 
-    flashVersion: 9, 
+    flashVersion: 9,
     debugMode: false,
 
     onready: function () {
@@ -23,7 +22,7 @@
   Player.prototype = {
     initSound: function (id, url) {
       var self = this;
-  
+
       var createSound = function () {
         self.sound = sm.createSound({
           id: id,
@@ -48,7 +47,7 @@
       this.dom.play = $('<div class="play"></div>').appendTo(obj);
 
       this.dom.timeLeft = $('<div class="time-left">00 : 00</div>').appendTo(obj);
-     
+
       this.dom.progress = $('<div class="progress"></div>').appendTo(obj);
       this.dom.loaded = $('<div class="loaded"></div>').appendTo(this.dom.progress);
       this.dom.progressPointer = $('<div class="pointer"></div>').appendTo(this.dom.progress);

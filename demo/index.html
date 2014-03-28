@@ -2,10 +2,10 @@
 
 <html>
   <head>
-    <meta charset='utf-8'> 
+    <meta charset='utf-8'>
     <title>Simple-Audio-Player</title>
 
-    <link type="text/css" rel="stylesheet" href="../css/player.css" />
+    <link type="text/css" rel="stylesheet" href="../dist/player.css" />
 
     <style>
 body {
@@ -62,12 +62,14 @@ body {
 }
     </style>
 
-    <script src="../js/soundmanager2.js"></script>
-    <script src="../js/jquery.js"></script>
-    <script src="../js/player.js"></script>
+    <script src="../dist/soundmanager2.js"></script>
+    <script src="jquery.js"></script>
+    <script src="../dist/player.js"></script>
 
     <script>
-      $(document).ready(function() {        
+      soundManager.setup({ url: '/dist/' });
+
+      $(document).ready(function() {
         $('#player').player('Losing-My-Religion.mp3');
       });
     </script>
