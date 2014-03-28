@@ -13,6 +13,8 @@ Simple-Audio-Player is a lightweight JavaScript library which is implemented as 
 ### Notices
 
 * It is necessary to have a web server, you can't open it statically
+* You can do `bundle install` and `ruby server.rb` to run sinatra server
+* The library is available through bower: `bower install Simple-Audio-Player`
 
 ![screen](https://raw.github.com/speranskydanil/Simple-Audio-Player/master/screen.png)
 
