@@ -5,61 +5,45 @@
     <meta charset='utf-8'>
     <title>Simple Audio Player</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../dist/player.css">
 
     <style>
-body {
+html, body {
+  height: 100%;
   margin: 0px;
   padding: 0px;
-  background: #333;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333;
+  font-size: 16px;
 }
 
 .wrapper {
-  width: 720px;
-  margin: 30px auto 0px;
-  padding: 30px;
-  border: 1px solid #aaa;
-  background: #f5f5f5;
-
-  -webkit-border-radius: 10px;
-     -moz-border-radius: 10px;
-          border-radius: 10px;
+  position: relative;
+  min-height: 100%;
 }
 
-.wrapper h1 {
-  margin: 0px 16px;
-  padding: 0px;
-  font-size: 32px;
-  line-height: 32px;
+.header {
+  padding: 20px;
+  background: #005500;
+  background-image: url(assets/bg.png);
+  font-size: 40px;
+  color: white;
+  text-align: center;
 }
 
-.wrapper hr {
-  height: 1px;
-  margin: 16px 0px;
-  padding: 0px;
-  border: none;
-  background: #d5d5d5;
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: #efe;
+  background-image: url(assets/bg.png);
+  text-align: center;
 }
 
-.wrapper a {
-  color: #08c;
-  text-decoration: none;
-}
-
-.wrapper a:hover {
-  color: #005580;
-  text-decoration: underline;
-}
-
-.wrapper .label {
-  margin-bottom: 4px;
-  padding-left: 16px;
-  font-style: italic;
+.container {
+  padding: 20px 0px 0px 82px;
 }
     </style>
 
@@ -78,12 +62,20 @@ body {
 
   <body>
     <div class="wrapper">
-      <h1>Playlist</h1>
+      <div class="header">Simple Audio Player</div>
 
-      <hr>
+      <div class="container">
+        <p><i>R.E.M. - Losing My Religion</i></p>
+        <div id="player" class="player"></div>
+      </div>
 
-      <div class="label">R.E.M. - Losing My Religion</div>
-      <div id="player" class="player"></div>
+      <div class='footer'>
+        <strong>Author (Speransky Danil):</strong>
+        <a href="http://dsperansky.info">Personal Page</a> /
+        <a href="http://ru.linkedin.com/in/speranskydanil/en">LinkedIn</a> /
+        <a href="https://github.com/speranskydanil?tab=repositories">GitHub</a> /
+        <a href="http://stackoverflow.com/users/1550807/speransky-danil">StackOverflow</a>
+      </div>
     </div>
   </body>
 </html>
