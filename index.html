@@ -25,10 +25,44 @@
 <p>Simple-Audio-Player is a lightweight JavaScript library which is implemented as a jQuery plugin and based on flash and soundmanager2.</p>
 
 <h2>
-<a id="quick-start" class="anchor" href="#quick-start" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quick Start</h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://speranskydanil.github.io/Simple-Audio-Player/demo.html">DEMO</a>
+</h2>
 
-<h3>
-<a id="steps" class="anchor" href="#steps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Steps</h3>
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<ul>
+<li>soundmanager2</li>
+<li>jQuery</li>
+<li>Font Awesome</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<pre><code>bower install Simple-Audio-Player
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>../dist/player.css<span class="pl-pds">"</span></span>&gt;
+
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://code.jquery.com/jquery-1.11.2.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../dist/soundmanager2.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>../dist/player.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+
+<span class="pl-s1">&lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">  soundManager.setup({ url<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>/dist/<span class="pl-pds">'</span></span> }); <span class="pl-c">// path to soundmanager2 files</span></span>
+<span class="pl-s1"></span>
+<span class="pl-s1">  $(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>() {</span>
+<span class="pl-s1">    $(<span class="pl-s"><span class="pl-pds">'</span>#player<span class="pl-pds">'</span></span>).player(<span class="pl-s"><span class="pl-pds">'</span>Losing-My-Religion.mp3<span class="pl-pds">'</span></span>); <span class="pl-c">// relative path to mp3</span></span>
+<span class="pl-s1">  });</span>
+<span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
+
+<h2>
+<a id="running-demo" class="anchor" href="#running-demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running DEMO</h2>
 
 <ol>
 <li>Clone the repository</li>
@@ -36,14 +70,12 @@
 <li>Go to /demo/index.html</li>
 </ol>
 
-<h3>
-<a id="notices" class="anchor" href="#notices" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notices</h3>
+<h2>
+<a id="notices" class="anchor" href="#notices" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notices</h2>
 
 <ul>
 <li>It is necessary to have a web server, you can't open it statically</li>
 <li>You can do <code>bundle install</code> and <code>ruby server.rb</code> to run sinatra server</li>
-<li>The library is available through bower: <code>bower install Simple-Audio-Player</code>
-</li>
 </ul>
 
 <p><img src="https://raw.github.com/speranskydanil/Simple-Audio-Player/master/screen.png" alt="screen"></p>
