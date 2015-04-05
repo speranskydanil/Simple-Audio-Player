@@ -1,0 +1,111 @@
+.player,
+.player * {
+  overflow: visible;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.player {
+  width: 590px;
+  height: 33px;
+  margin: 0px 0px 10px 0px;
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+  background: #fff;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #555;
+
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.player > div {
+  float: left;
+  margin-right: 10px;
+}
+
+.player .play {
+  width: 21px;
+  height: 21px;
+  font-size: 1.5em;
+}
+
+.player .time-left {
+  width: 50px;
+  height: 21px;
+  text-align: center;
+}
+
+.player .time-right {
+  width: 50px;
+  height: 21px;
+  text-align: center;
+}
+
+.player .progress {
+  width: 300px;
+  height: 21px;
+  margin-bottom: 0px;
+  background: #ddd;
+  border-top: 7px solid #fff;
+  border-bottom: 7px solid #fff;
+}
+
+.player .loaded {
+  width: 0px;
+  height: 7px;
+  background: #ccc;
+}
+
+.player .progress .pointer {
+  width: 12px;
+  height: 12px;
+  margin: -10px 0px 0px -3px;
+  border: 1px solid #999;
+  background: #fff;
+
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.player .mute {
+  width: 21px;
+  height: 21px;
+  font-size: 1.5em;
+}
+
+.player .volume {
+  width: 60px;
+  height: 21px;
+  margin-right: 0px;
+  background: #ddd;
+  border-top: 8px solid #fff;
+  border-bottom: 8px solid #fff;
+}
+
+.player .volume .pointer {
+  width: 9px;
+  height: 9px;
+  margin: -2px 0px 0px 27px;
+  border: 1px solid #999;
+  background: #fff;
+
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
