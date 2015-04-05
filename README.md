@@ -2,7 +2,7 @@
 
 Simple-Audio-Player is a lightweight JavaScript library which is implemented as a jQuery plugin and based on flash and soundmanager2.
 
-## <a href="http://speranskydanil.github.io/Simple-Audio-Player/demo.html">DEMO</a>
+## <a href="http://speranskydanil.github.io/Simple-Audio-Player">DEMO</a>
 
 ## Dependencies
 
