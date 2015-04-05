@@ -44,7 +44,7 @@
     buildDom: function (obj) {
       this.dom = {};
 
-      this.dom.play = $('<div class="play"></div>').appendTo(obj);
+      this.dom.play = $('<div class="play fa fa-play"></div>').appendTo(obj);
 
       this.dom.timeLeft = $('<div class="time-left">00 : 00</div>').appendTo(obj);
 
@@ -54,7 +54,7 @@
 
       this.dom.timeRight = $('<div class="time-right">00 : 00</div>').appendTo(obj);
 
-      this.dom.mute = $('<div class="mute"></div>').appendTo(obj);
+      this.dom.mute = $('<div class="mute fa fa-volume-up"></div>').appendTo(obj);
 
       this.dom.volume = $('<div class="volume"></div>').appendTo(obj);
       this.dom.volumePointer = $('<div class="pointer"></div>').appendTo(this.dom.volume);
@@ -64,12 +64,12 @@
       var self = this;
 
       this.dom.play.click(function () {
-        $(this).toggleClass('active');
+        $(this).toggleClass('fa-play fa-pause');
         self.sound.togglePause();
       });
 
       this.dom.mute.click(function () {
-        $(this).toggleClass('active');
+        $(this).toggleClass('fa-volume-up fa-volume-off');
         self.sound.toggleMute();
       });
 
@@ -106,7 +106,7 @@
     },
 
     onFinish: function () {
-      this.dom.play.removeClass('active');
+      this.dom.play.removeClass('fa-pause').addClass('fa-play');
 
       this.sound.setPosition(0);
       this.setProgressPointer();
