@@ -1,10 +1,11 @@
 {
   "name": "Simple-Audio-Player",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/speranskydanil/Simple-Audio-Player",
   "authors": [
     "Speransky Danil <speranskydanil@gmail.com>"
   ],
+  "license": "MIT",
   "description": "Simple-Audio-Player is a lightweight JavaScript library which is implemented as a jQuery plugin and based on flash and soundmanager2.",
   "main": [
     "dist/player.css",
@@ -13,13 +14,6 @@
     "dist/soundmanager2_flash9.swf",
     "dist/soundmanager2.js"
   ],
-  "keywords": [
-    "audio",
-    "player",
-    "javascript",
-    "soundmanager2"
-  ],
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -33,5 +27,11 @@
   ],
   "dependencies": {
     "jquery": ">1.11.0"
-  }
+  },
+  "keywords": [
+    "audio",
+    "player",
+    "javascript",
+    "soundmanager2"
+  ]
 }
