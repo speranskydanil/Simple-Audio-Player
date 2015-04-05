@@ -8,6 +8,20 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/player.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="dist/soundmanager2.js"></script>
+    <script src="dist/player.js"></script>
+
+    <script>
+      soundManager.setup({ url: 'dist/' });
+
+      $(document).ready(function() {
+        $('#player').player('Losing-My-Religion.mp3');
+      });
+    </script>
   </head>
   <body>
     <section class="page-header">
@@ -25,8 +39,10 @@
 <p>Simple-Audio-Player is a lightweight JavaScript library which is implemented as a jQuery plugin and based on flash and soundmanager2.</p>
 
 <h2>
-<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://speranskydanil.github.io/Simple-Audio-Player/demo.html">DEMO</a>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>DEMO
 </h2>
+
+<div id="player" class="player"></div>
 
 <h2>
 <a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h2>
